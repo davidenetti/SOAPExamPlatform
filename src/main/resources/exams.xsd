@@ -1,0 +1,77 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    xmlns:tns="http://namespacetest.com"
+    targetNamespace="http://namespacetest.com"
+    elementFormDefault="qualified"
+
+>
+
+    <xs:element name="getExamRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="examName" type="xs:string"/>
+                <xs:element name="studentID" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getExamResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="responseResult" type="tns:examRegistration"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="getTranscriptRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="studentID" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getTranscriptResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="responseResult" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="setNewExamRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="markValue" type="tns:markValue"/>
+                <xs:element name="examName" type="xs:string"/>
+                <xs:element name="studentID" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+   <xs:element name="setNewExamResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="responseResult" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Complex types definition -->
+    <xs:complexType name="examRegistration">
+        <xs:sequence>
+            <xs:element name="value" type="tns:markValue"/>
+            <xs:element name="examName" type="xs:string"/>
+            <xs:element name="candidateName" type="xs:string"/>
+            <xs:element name="registrationDate" type="xs:string"/>  <!-- date format: YYYY-mm-dd -->
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="markValue">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="18"/>
+            <xs:maxInclusive value="31"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

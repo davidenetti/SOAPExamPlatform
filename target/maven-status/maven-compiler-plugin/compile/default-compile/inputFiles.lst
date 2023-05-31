@@ -1,0 +1,16 @@
+/Users/davide/Documents/soap-project-web-service/src/main/java/com/soapproject/soapprojectwebservice/SoapProjectWebServiceApplication.java
+/Users/davide/Documents/soap-project-web-service/src/main/java/com/namespacetest/GetExamResponse.java
+/Users/davide/Documents/soap-project-web-service/src/main/java/com/namespacetest/SetNewExamResponse.java
+/Users/davide/Documents/soap-project-web-service/src/main/java/com/soapproject/soapprojectwebservice/ExamsClientConfig.java
+/Users/davide/Documents/soap-project-web-service/src/main/java/com/namespacetest/GetExamRequest.java
+/Users/davide/Documents/soap-project-web-service/src/main/java/com/namespacetest/package-info.java
+/Users/davide/Documents/soap-project-web-service/src/main/java/com/soapproject/soapprojectwebservice/WebServiceConfig.java
+/Users/davide/Documents/soap-project-web-service/src/main/java/com/namespacetest/GetTranscriptRequest.java
+/Users/davide/Documents/soap-project-web-service/src/main/java/com/soapproject/soapprojectwebservice/RunClient.java
+/Users/davide/Documents/soap-project-web-service/src/main/java/com/namespacetest/SetNewExamRequest.java
+/Users/davide/Documents/soap-project-web-service/src/main/java/com/soapproject/soapprojectwebservice/ExamsClient.java
+/Users/davide/Documents/soap-project-web-service/src/main/java/com/soapproject/soapprojectwebservice/ExamsRepository.java
+/Users/davide/Documents/soap-project-web-service/src/main/java/com/soapproject/soapprojectwebservice/ExamsEndpoint.java
+/Users/davide/Documents/soap-project-web-service/src/main/java/com/namespacetest/GetTranscriptResponse.java
+/Users/davide/Documents/soap-project-web-service/src/main/java/com/namespacetest/ObjectFactory.java
+/Users/davide/Documents/soap-project-web-service/src/main/java/com/namespacetest/ExamRegistration.java
