@@ -91,11 +91,13 @@ public class ExamsRepository {
         String keyBuilding = newExam.toLowerCase() + studentID.toLowerCase();
         String timeStamp = new SimpleDateFormat("yyyy-MM-dd").format(Calendar.getInstance().getTime());
         
+        String valueToString = String.valueOf(value);
+
         try {
             InsertOneResult result = collection.insertOne(
                 new Document()
                     .append("_id", keyBuilding)
-                    .append("value", value)
+                    .append("value", valueToString)
                     .append("candidateName", studentID)
                     .append("examName", newExam)
                     .append("registrationDate", timeStamp)
